@@ -42,7 +42,7 @@ export const FetchNft: FC = () => {
       {nftData && (
         <div className={styles.gridNFT}>
           {nftData.map((nft) => (
-            <div>
+            <div key={nft.id}>
               <ul>{nft.name}</ul>
               <img src={nft.image} />
             </div>
